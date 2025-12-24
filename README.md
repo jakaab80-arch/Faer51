@@ -1,27 +1,34 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الخـفـاجي - الصفحة الرئيسية</title>
     <meta name="description" content="موقع الخفاجي - منصة لنشر المقالات والمحتوى الفخم.">
+
     <style>
         /* إعدادات عامة */
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #000000, #4b0000); /* أسود + أحمر غامق */
-            color: #ffd700; /* ذهبي */
+            background: linear-gradient(135deg, #000000, #4b0000);
+            color: #ffd700;
             line-height: 1.6;
         }
 
         a {
             text-decoration: none;
-            color: #ffd700; /* ذهبي */
+            color: #ffd700;
         }
 
         a:hover {
             color: #ffdd57;
+        }
+
+        /* container */
+        .container {
+            width: 90%;
+            margin: 0 auto;
         }
 
         /* الرأس */
@@ -35,8 +42,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 90%;
-            margin: 0 auto;
         }
 
         header h1 {
@@ -64,6 +69,8 @@
             gap: 20px;
             font-weight: bold;
             font-size: 1.1em;
+            padding: 0;
+            margin: 0;
         }
 
         /* قسم الترحيب */
@@ -119,6 +126,16 @@
 
         /* استجابة الهواتف */
         @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            header nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
             .features {
                 flex-direction: column;
                 align-items: center;
@@ -126,6 +143,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
